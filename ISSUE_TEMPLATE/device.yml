@@ -1,0 +1,28 @@
+name: Device or hardware change
+description: Propose a new device, a board revision or an enclosure change.
+labels: ["hardware"]
+body:
+  - type: textarea
+    id: purpose
+    attributes:
+      label: What it senses or tells
+      description: What the device measures, says or shows, and in which moment of the day.
+    validations:
+      required: true
+  - type: textarea
+    id: parts
+    attributes:
+      label: Parts
+      description: Main board, sensors, power, and where to buy them.
+  - type: textarea
+    id: files
+    attributes:
+      label: Files, sketches or photos
+      description: Links to KiCad, FreeCAD or photos of a prototype.
+  - type: checkboxes
+    id: licenses
+    attributes:
+      label: Licenses
+      options:
+        - label: I am fine with the hardware design being shared under CERN-OHL-S-2.0 and its firmware under Apache-2.0.
+          required: true

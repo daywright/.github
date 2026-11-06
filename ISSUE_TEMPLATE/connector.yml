@@ -1,0 +1,25 @@
+name: Connector request
+description: Ask for, or offer to build, a connector to a device or service.
+labels: ["connector"]
+body:
+  - type: input
+    id: target
+    attributes:
+      label: Device or service
+      placeholder: for example a smart scale model, a watch, a food database
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: What data it provides
+  - type: input
+    id: docs
+    attributes:
+      label: Link to its API or protocol docs
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Help
+      options:
+        - label: I can help build or test this connector.

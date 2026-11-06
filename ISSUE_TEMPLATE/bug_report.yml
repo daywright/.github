@@ -1,0 +1,45 @@
+name: Bug report
+description: Something does not work the way the docs say it should.
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where
+      options:
+        - The brain (backend)
+        - Android app
+        - iPhone app
+        - Daywright Kitchen
+        - Daywright Board
+        - Daywright Pendant
+        - Docs
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions and hardware
+      description: Commit or release, operating system, phone, board revision.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: I removed personal data, health data and secrets from anything pasted here.
+          required: true
