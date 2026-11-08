@@ -13,6 +13,6 @@ SPDX-FileCopyrightText = "Organization for Ethical Source and the Contributor Co
 SPDX-License-Identifier = "CC-BY-SA-4.0"
 
 [[annotations]]
-path = ["ISSUE_TEMPLATE/**", "PULL_REQUEST_TEMPLATE.md", "REUSE.toml"]
+path = [".github/ISSUE_TEMPLATE/**", "PULL_REQUEST_TEMPLATE.md", "REUSE.toml"]
 SPDX-FileCopyrightText = "2026 The Daywright contributors"
 SPDX-License-Identifier = "CC0-1.0"
